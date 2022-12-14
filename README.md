@@ -15,8 +15,8 @@ The script does not accept any input.
 The script returns a list of the number of pages printed with each printer or user.
 
 ## .EXAMPLE
-    PS> .\Get-PrinterPageCount.ps1
-## .EXAMPLE
     PS> .\Get-PrinterPageCount.ps1 -Property UserName
 ## .EXAMPLE
     PS> .\Get-PrinterPageCount.ps1 -Property PrinterName
+## .EXAMPLE
+    PS> .\Get-PrinterPageCount.ps1 -Property PrinterName | Sort-Object -Property PageCount -Descending | Select-Object -First 10
